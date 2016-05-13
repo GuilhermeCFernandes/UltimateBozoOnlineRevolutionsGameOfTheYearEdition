@@ -1,3 +1,5 @@
+
+
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -18,8 +20,6 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 
-import ssc103.bozo.dados.Placar;
-import ssc103.bozo.dados.RolaDados;
 
 
 public class Main extends JFrame implements ActionListener {

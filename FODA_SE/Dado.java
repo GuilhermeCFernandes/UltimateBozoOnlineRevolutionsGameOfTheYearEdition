@@ -1,3 +1,4 @@
+
 /**
  * Simula um dado de número de lados variados. Ao criar o objeto 
  * é possível estabelecer o número de lados. A rolagem do dado é

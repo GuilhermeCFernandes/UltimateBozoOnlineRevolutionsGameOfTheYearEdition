@@ -1,4 +1,6 @@
+
 import java.util.Arrays;
+
 
 /**
  * Esta classe representa o placar de um jogo de Bozó. Permite que combinações
