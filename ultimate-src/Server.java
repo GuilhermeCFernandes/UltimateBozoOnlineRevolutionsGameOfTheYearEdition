@@ -7,7 +7,7 @@ public class Server {
 
 
 	public static void main(String[] args) throws Exception {
-		ServerSocket servidor = new ServerSocket(9669);
+	     ServerSocket servidor = new ServerSocket(9669);
 	     System.out.println("Porta 9669 aberta!");
 	     Socket cliente = servidor.accept();
 	     System.out.println("Nova conexão com o cliente " +   
