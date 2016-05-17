@@ -84,6 +84,14 @@ public class RolaDados {
      * Método para imprimir uma representação dos n dados e suas respectivas faces sorteadas.
      * @return String contendo o desenho que representa os dados
      */
+    
+    public int[] toNumbers(){
+    	int[]array = new int[5];
+    	for(int i = 0; i < 5; i ++)
+    		array[i] = dados[i].getLado();
+    	return array;
+    } 
+    
     @Override
     public String toString() {
         String s = "";

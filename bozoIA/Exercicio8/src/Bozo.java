@@ -11,7 +11,7 @@ public class Bozo {
         String deveRolar = "";
         int posicao = 0;
         Server server = new Server();
-        server.run();
+        server.start();
 
         for(int nRodadas = 0; nRodadas < 10; nRodadas++) {
             //Rolar dados pela primeira vez
