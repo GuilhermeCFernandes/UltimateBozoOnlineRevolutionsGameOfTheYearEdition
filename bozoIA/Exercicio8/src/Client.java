@@ -15,6 +15,7 @@ public class Client {
 
 		saida.println("I 9037713");
 		serverResponse = server.nextLine();
+		System.out.println(serverResponse);
 
 		for(int rodadas = 1; rodadas <= 10; rodadas++) {
 			saida.println("R"+rodadas);
