@@ -52,6 +52,12 @@ public class Dado {
      * Apenas funciona com um dado de 6 faces
      * @return Uma string com o desenho representando a face sorteada do dado caso o dado seja de 6 lados ou uma string vazia caso o dado tenha um número diferente de 6 lados
      */
+    
+    public int[] toNumbers(){
+    	int[]array = new int[5];
+    	return array;
+    }
+    
     @Override
     public String toString() {
         if(faces != 6)
