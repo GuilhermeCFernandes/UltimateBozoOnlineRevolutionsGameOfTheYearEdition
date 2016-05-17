@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Client {
 	public static void main(String[] args) throws Exception {
 		//Entrada, saida e controle
-		Socket cliente = new Socket("172.26.209.26", 9669);
+		Socket cliente = new Socket("172.26.209.96", 9669);
 		PrintStream saida = new PrintStream(cliente.getOutputStream());
 		Scanner server = new Scanner(cliente.getInputStream());
 		String serverResponse = null;
