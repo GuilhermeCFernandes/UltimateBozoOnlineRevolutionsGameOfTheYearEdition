@@ -14,7 +14,6 @@ public class Server extends Thread{
 		tmp = buffer.get(0);
 		buffer.remove(0);
 		return tmp;
-		
 	}
 	
 	public void run(String[] args) throws Exception {
