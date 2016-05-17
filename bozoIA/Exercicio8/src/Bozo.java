@@ -17,7 +17,7 @@ public class Bozo {
 		
 		if(a[0].equals("T")) {
 			dados.rolar(a[1]+" "+a[2]+" "+a[3]+" "+a[4]+" "+a[5]);
-			return dados.toNumber();	
+			return ""+dados.toNumbers();	
 		}
 		else if(a[0].equals("P")) {
             int posicao = Integer.parseInt(a[1]);
