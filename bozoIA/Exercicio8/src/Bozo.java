@@ -16,16 +16,26 @@ public class Bozo {
 		String[] a = args.split(" ");
 		
 		if(a[0].equals("T")) {
-			dados.rolar(a[1]+" "+a[2]+" "+a[3]+" "+a[4]+" "+a[5]);
-			return ""+dados.toNumbers();	
+			String rola = new String();
+			for(int i = 1; i < 6; i ++)
+				rola += a[i];
+			dados.rolar(rola);
+			return dados.toNumbers();	
 		}
-		else if(a[0].equals("P")) {
+		else if(a[0].charAt(0) == 'P') {
             int posicao = Integer.parseInt(a[1]);
 			placar.add(posicao-1, dados.valoresAnteriores());
 			return ""+placar.getScore();
 		}
+		else if(a[0].charAt(0) == 'R') {
+			dados.rolar("11111");
+			return dados.toNumbers();
+		}
+		else if(a[0].charAt(0) == 'F') {
+			return placar.getScore() + "";
+		}
 		else {
-			return "";
+			return "Deu bosta";
 		}
     }
 }

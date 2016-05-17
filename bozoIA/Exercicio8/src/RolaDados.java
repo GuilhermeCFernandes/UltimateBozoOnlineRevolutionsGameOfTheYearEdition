@@ -70,25 +70,25 @@ public class RolaDados {
      */
     public int [] rolar(String s) {
         boolean [] quais = new boolean[n];
-        Arrays.fill(quais, false);
         for(int i = 0; i < s.length(); i ++) {
             int aux = Character.getNumericValue(s.charAt(i));
-            aux--;
-            if (aux < n && aux >= 0)
-            	quais[aux] = true;
+            quais[i] = aux == 1;
         }
         return rolar(quais);
     }
+    
 
     /**
      * Método para imprimir uma representação dos n dados e suas respectivas faces sorteadas.
      * @return String contendo o desenho que representa os dados
      */
     
-    public int[] toNumbers(){
-    	int[]array = new int[5];
-    	for(int i = 0; i < 5; i ++)
-    		array[i] = dados[i].getLado();
+    public String toNumbers(){
+    	String array = new String();
+    	for(int i = 0; i < 5; i ++){
+    		array += valores[i];
+    		array += " ";
+    	}
     	return array;
     } 
     
